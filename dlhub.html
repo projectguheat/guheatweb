@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Project GUHeat</title>
+    <meta name="description" content="This is the official website of Project GUHeat">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/hub.css">
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-icon-container">
+            <a href="index.html" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white" style="color:rgb(128, 206, 252)"></i></a>
+          </div>
+          <a class="navbar-brand" href="index.html" id="imglogo"><img src="assets/images/GUHeat.png" ></a>
+          <a class="navbar-brand" href="index.html" id="titlealonglogo"> Geospatial Assessment and Modelling <br>of Urban Heat Islands in Philippine Cities</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!-- <ul class="navbar-form navbar-right">
+            <li><a href="">Logout</a></li>
+          </ul> -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="hidden-xs" data-toggle="collapse" data-target=".navbar-collapse-in" id="list-btn"><i class="fa fa-list" id="nav-icon"></i>&nbsp;&nbsp;Sidebar</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#modal1"><i class="fa fa-question-circle" id="nav-icon"></i>&nbsp;&nbsp;About</a></li>
+            <li class="dropdown">
+              <a href="#" role="button" data-toggle="dropdown"><i class="fa fa-phone" id="nav-icon"></i>&nbsp;&nbsp;Contact <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">UP DGE-TCAGP</a></li>
+                <li><a href="#">DOST-PCIEERD</a></li>
+                <li class="divider hidden-xs"></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a  href="#" role="button" data-toggle="dropdown"><i class="fa fa-user" id="nav-icon"></i>&nbsp;&nbsp;Account <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href=""><i class="fa fa-cog"></i>&nbsp;&nbsp;Settings</a></li>
+                  <li><a href=""><i class="fa fa-user-times"></i>&nbsp;&nbsp;Logout</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <!-- Map and Sidebar  -->
+    <div id="container">
+      <div id="sidebar">
+        <div class="sidebar-wrapper">
+          <div class="panel panel-default" id="features">
+            <div class="panel-heading">
+              <h3 class="panel-title">Layers</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                  <p><input type="text" id="datepicker" ></p>
+                  <img src="assets/images/chlo-color-bar.png" style="max-width:200px">
+                  
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Layers
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" data-value="action">Landsat-derived</a></li>
+                      <li><a href="#" data-value="another action">ENVI-met</a></li>
+                    </ul>
+                  </div>
+                    <form>
+                      <input type="radio" name="water-quality layers" checked>Land Surface Temperature<br>
+                      <input type="radio" name="water-quality layers">Potential Air Temperature<br>
+                      <input type="checkbox" name="layers">Wind Direction (for ENVImet only)<br>
+
+                    </form>
+                  <br>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Date
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#" data-value="action">All</a></li>
+                      <li><a href="#" data-value="action">Last Three Month</a></li>
+                      <li><a href="#" data-value="another action">Last Six Months</a></li>
+                      <li><a href="#" data-value="something else here">Last Year</a></li>
+                      <li><a href="#" data-value="separated link">Custom Date</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <form>
+                      <input type="radio" name="date" checked>All<br>
+                      <input type="radio" name="date">Last Three Months<br>
+                      <input type="radio" name="date">Last Six Months<br>
+                      <input type="radio" name="date">Last Year<br>
+                      <input type="radio" name="date">Custom Date<br>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <!--  Modals  -->
+    <div class="modal fade" id="modal1" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Project GUHeat</h4>
+            </div>
+            <div class="modal-body">
+              <ul class="nav nav-tabs nav-justified" id="abt-tab">
+                <li class="active">Active</li>
+                <li>Not Active</li>
+                <li>Not Active 2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+    <script src="assets/js/hub.js"></script>
+  </body>
+</html>

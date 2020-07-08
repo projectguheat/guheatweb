@@ -1,0 +1,116 @@
+html, body, #container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  padding-top: 50px;
+}
+#titlealonglogo {
+  margin-top: -8px;
+  font-size: 18px;
+}
+#imglogo {
+  position: relative;
+}
+#sidebar {
+  display: block;
+  width: 250px;
+  height: 100%;
+  max-width: 100%;
+  float: left;
+}
+
+.dropdown button {
+  width: 175px;
+}
+#map {
+  width: auto;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+#features {
+  margin: 0px;
+  border: none;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.panel-heading{
+   width: 250px;
+   text-align: center;
+}
+.panel-body{
+  width: 215px;
+  margin-left: 35px;
+}
+
+#datepicker{
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sidebar-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#datepicker {
+  position: relative;
+  z-index: 2 !important;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+}
+.navbar-header .navbar-icon-container {
+  margin-right: 15px;
+}
+.navbar-header .navbar-icon {
+  line-height: 50px;
+  height: 50px;
+}
+.navbar-header a.navbar-icon {
+  margin-left: 25px;
+}
+.navbar-brand img {
+  height: 45px;
+  margin: -10px;
+}
+
+#nav-icon {
+  color:rgb(199, 79, 43)
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-brand {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+  #titlealonglogo {
+
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  #titlealonglogo {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 570px) {
+  #titlealonglogo {
+    font-size: 11px;
+  }
+}

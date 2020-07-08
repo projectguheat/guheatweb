@@ -1,0 +1,7 @@
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.navbar .navbar-brand {
+    color:#f87204
+}
