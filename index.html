@@ -38,7 +38,10 @@
                 </ul>
                 <ul class="navbar-nav mt-2 mt-md-0">
                     <li>
-                        <a class="nav-link" href="dlhub.html">Download Hub</a>
+                        <a class="nav-link" href="docs.html">Documents and Reports</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="dlhub.html">Map Layers Hub</a>
                     </li>
                     <li>
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -47,9 +50,36 @@
                 </form>
             </div>
         </nav>
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
+                <div class="mySlides fade">
+                    <img  src='assets/images/IEC and info/DidYouKnow_2020_WarmestProjected.jpg' style='width: 100%;'/>
+                </div>
+                <div class="mySlides fade">
+                    <img  src='assets/images/IEC and info/DidYouKnow_UHI_IncreaseEnergyConsumption.jpg' style='width: 100%;'/>
+                </div>
+                <div class="mySlides fade">
+                    <img  src='assets/images/IEC and info/GUHEAT GUHIT_UbeTrivia.jpg' style='width: 100%;'/>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img  src='assets/images/IEC and info/Lst_final_01.jpg' style='width: 100%;' alt="pelican"/>
+                </div>
+                
+            </div>
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+        </div>
+        <br/>
+        <div style='text-align: center;'>
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+        </div>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-5 text-center bg-light">
             <div class="col-md-10 p-lg-10 mx-auto">
-                <h1>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h1>
+                <h2>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h2>
                 <h3>(Project GUHeat)</h3>
                 <p>The Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities (Project GUHeat) aims to assess the development of urban heat islands in rapidly urbanizing and highly urbanized cities in the Philippines and develop models for estimating land surface temperatures (LST) and predicting urban heat islands (UHIs) by relating LST with environmental factors including land use – land cover distribution. This Program is funded by the Innovation Council (Philippine Council for Industry, Energy, & Emerging Technology Research & Development of DOST (DOST-PCIEERD) and is implemented by the University of the Philippines Training Center for Applied Geodesy and Photogrammetry (UP TCAGP). </p>
             </div>
@@ -58,31 +88,29 @@
         </div>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-5 text-center bg-light">
             <div class="col-md-10 p-lg-10 mx-auto">
-                <h1>ACCOMPLISHMENTS </h1>
-                <h3>Year 1</h3>
-                <p>For its YEAR 1 (January 16, 2019 – January 15, 2020), Project GUHeat has successfully accomplished the needed literature reviews, data gathering, workflows and output generation, and initial products validation during its first year of implementation. The main accomplishment of Project GUHeat in terms of scientific research can be categorize into four. First is the analysis of surface temperature, air temperature, and pm profile of each study site. This was mainly done in Quarter 1 wherein a series of secondary and primary data collection was done. Second, site-specific studies were conducted by UPD and the partner SUCs/HEIs. These studies varies depending on the unique climate and land  cover characteristics of the study sites – including studies of the cooling effect of water, effect of built-up expansion to UHI, and the spatial and temporal patterns in selected cities, among others. Third, Project GUHeat assessed the relationship of LST-UHI to public health such as dengue cases, air quality, and water-energy consumption. Fourth, different microclimate scenarios selected for each study site were simulated using ENVI-met.
-                    For the first quarter of Year 1, Project GUHeat focused on two main objectives: (1) analyze and report the results of microclimate simulation using ENVI-met, and (2) continue on the site-specific studies, including new UHI-related topics. Most of the models for the priority sites were completed, while additional scenarios are being process. The analysis of ENVI-met simulations include characterization of the potential air temperature for the actual current scenario, and identification of the differential temperature when new scenarios were explored. The tested new scenarios may either be the potential current urbanization scenario of a specific site, or potential UHI-mitigation scenarios such as conversion to green roofing, among others. 
-                    In accomplishing the project objectives, the project utilized different remote sensing, field datasets and workflows to generated specific UHI-related products. One important part of the research is the development of effective workflows for generating present and historical LST-UHI map layers. The workflows were tested using the initial data obtained and are now being utilized by the project teams for their individual studies. In the third quarter, daytime and night time LST Maps were distributed to cities the NCR. For UHI simulation studies, the UP team initiated the simulations using EnviMet based on available literature and methods, all of which were disseminated to the partner SUCs/HEI. During the last quarters of Year 1, the researchers have focused on ENVI-met data collection, processing, and model validation.
-                    The GUHeat project is targeting a total of 6 P’s: publications, patents, products, people services, places and policies. Most of the results of this project were already presented in national and international conferences and symposia and were successfully published in journals (see Project 6P’s document).  Within the previous year, GUHeat team have conducted four project-wide workshop involving the SUCs and LGUs from target cities. Additional workshop and series of LGU-based research forum will be conducted in year 2. In terms of equipment acquisition, the thermal camera (FLIR), EnviMet licenses, and Hobo air temperature loggers were already received by Project GUHeat last year. 
-                    The project have completed the research and project staff members from UPD, partner SUCs and PAGASA. During Quarter 1, one new SRS1 was hired to replace a former research staff in the same position. Employed by the project are one Project Leader, two Senior Science Research Specialists, six Science Research Specialist II, six Science Research Specialist I, one Machine learning Specialist, nine project staffs, and one Project Development Officer II.
-                     </p>
+                <h2>Urban Heat Islands (UHI) </h2>
+                <!-- <h3>Year 1</h3> -->
+                <p>World cities face a serious issue of consistent increase in temperature (Mora, et. al., 2017). The urban areas of developing countries, especially those with hot-humid climate like the Philippines, are vulnerable to excess heat. Urban Heat Island (UHI) is one of the most important challenges for the urban environment, especially in the context of global climate change. The urban population is particularly at risk from this phenomenon. UHI was first described in 1818 (Howard, 1818) when the city of London was then warmer than its surrounding suburbs. It occurs when a city experiences an increase of the sub-surface, surface, or air temperature than their undeveloped rural environment (Menberg et. al., 2013; Zhou et. al., 2011; Chow and Roth, 2006). Over the past two decades (1998–2017), the Philippines ranked fifth that was most affected by extreme weather events – storms, floods, heat waves etc. (Eckstein et. al., 2018) and recent work projected that the country could experience year-long heatwaves by 2050 under any of the potential emission scenarios (University of Hawaii at Manoa, 2017). As of 2014, 54 percent of the world’s population reside in urban areas and this amount is predicted to increase to 66 percent by 2050. Despite its lower level of urbanization, Asia accounts to 53 percent of the world’s urban population (United Nations 2014). Urban development accompanied by large population requires larger area for people to settle and inhabit thus replacing natural vegetation with buildings and structures. One of the largest problems associated with urbanization and industrialization of human civilization is the development of urban heat island (UHI). </p>
+                <img src="assets/images/IEC and info/uhi1.png">
+                <p>Urban heat island (Ningrum 2018)</p>
+                <p>UHI is described as a microclimatic phenomenon where urban areas experience elevated air and surface temperature compared to the surrounding rural areas (Oke 1982). Built surfaces in these urban areas or cities are composed largely of non-reflective construction materials. As a consequence, these materials tend to absorb a significant portion of the incident radiation, which is released as heat. With little to no vegetation, these urban areas encounter a difficulty in cooling down. An illustration of this phenomenon is shown in Figure 2 (Ningrum 2018).</p>
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
         <!-- <main class="container bg-dark" >
             <div class="jumbotron">
-                <h1>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h1>
+                <h2>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h2>
                 <h3>(Project GUHeat)</h3>
                 <p> The Geospatial Assessment</p>
             </div>
             <div class="jumbotron">
-                <h1>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h1>
+                <h2>Geospatial Assessment and Modelling of Urban Heat Islands in Philippine Cities </h2>
                 <h3>(Project GUHeat)</h3>
                 <p> The Geospatial Assessment</p>
             </div>
         </main> -->
-        <footer class="container py-4 bg-dark">
+        <footer class="py-4 bg-dark">
             <div class="row">
                 <div class="col-12 col-md">
                     <img style="max-width: 3em; max-height: 4em;" src="assets/images/GUHeat.png">
